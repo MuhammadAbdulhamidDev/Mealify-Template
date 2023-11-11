@@ -1,0 +1,56 @@
+/* CSS General rules */
+:root:has(.mode-checkbox:checked) {
+  --color-default: #fff;
+  --color-secondary: #fff;
+  --color-tertiary: #9f9f9f;
+  --color-light-grey: #252525;
+
+  --primary-hue: 35;
+  --primary-lightness: 44%;
+  --primary-saturation: 72%;
+
+  --light-hue: 0;
+  --light-saturation: 0%;
+  --light-lightness: 9%;
+}
+
+/* Body */
+:root:has(.mode-checkbox:checked) body {
+  background-color: #202020;
+}
+
+/* Nav Section */
+:root:has(.mode-checkbox:checked) .mode-group ~ .dark-mode-icon {
+  display: none;
+}
+:root:has(.mode-checkbox:checked) .mode-group ~ .light-mode-icon {
+  display: block;
+}
+:root:has(.mode-checkbox:checked) .navbar-links .active {
+  color: var(--color-default);
+}
+:root:has(.mode-checkbox:checked) body:not(body:has(:target)) li a[href="#home"],
+:root:has(.mode-checkbox:checked) body:has(.home:target) li a[href="#home"],
+:root:has(.mode-checkbox:checked) body:has(.contact:target) li a[href="#contact"],
+:root:has(.mode-checkbox:checked) body:has(.gallery:target) li a[href="#gallery"],
+:root:has(.mode-checkbox:checked) body:has(.chefs:target) li a[href="#chefs"] {
+  color: #fff;
+}
+
+/* Header Section*/
+body:has(.mode-checkbox:checked) .header-para {
+  color: var(--color-tertiary);
+}
+body:has(.mode-checkbox:checked) .video-btn {
+  background-color: transparent;
+}
+
+/* Chefs Section*/
+:root:has(.mode-checkbox:checked) .chef-card .card-img::before {
+  background-image: url("../images/chefs/06-team-shape-dark.svg");
+}
+
+/* Footer */
+body:has(.mode-checkbox:checked) .detail-content > h3 {
+  color: #adadad;
+}

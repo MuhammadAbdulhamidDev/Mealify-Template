@@ -1,0 +1,347 @@
+/*######################## $DeskTop First Method$ #############################*/
+/*# Most Common Used Break Points < 1400px _ 1200px _ 992px _ 768px _ 576px ## */
+/*#############################################################################*/
+
+/*#############################################################################*/
+/*########################## $XX-Large < (1400px)$ ############################*/
+/*#############################################################################*/
+@media (max-width: 1399.98px) {
+  /* Container */
+  .container {
+    max-width: 1140px;
+  }
+  /* Chefs Section */
+  .card-img:before {
+    bottom: -47px;
+  }
+  /* Gallery Section  */
+  .gallery-pictures {
+    height: 100rem;
+  }
+}
+/*#############################################################################*/
+/*########################### $X-Large < (1200px)$ ############################*/
+/*#############################################################################*/
+@media (max-width: 1199.98px) {
+  /* Container */
+  .container {
+    max-width: 960px;
+  }
+  /* Header Section */
+  header {
+    min-height: 85vh;
+  }
+  .header-para {
+    font-size: 1.5rem;
+  }
+  /* Chefs Section */
+  .card-img:before {
+    bottom: -55px;
+  }
+  .card-social-box {
+    top: 1rem;
+    padding: 0.25rem;
+  }
+  .card-social-box a {
+    font-size: 2.25rem;
+  }
+  /* Gallery Section  */
+  .gallery-pictures {
+    height: 83rem;
+  }
+  .meal-heading {
+    font-size: 2rem;
+  }
+  /* Footer Section */
+  footer .container {
+    gap: 4rem 0rem;
+  }
+  .footer-column {
+    min-width: 50%;
+  }
+  .footer-column:nth-of-type(1) {
+    order: 1;
+  }
+  .footer-column:nth-of-type(2) {
+    order: 3;
+  }
+  .footer-column:nth-of-type(3) {
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .footer-social-icons {
+    gap: 3rem;
+  }
+  .quick-links ul {
+    gap: 1rem;
+  }
+  .quick-links ul li {
+    width: 25%;
+  }
+}
+/*#############################################################################*/
+/*############################ $Large < (992px)$ #############################*/
+/*#############################################################################*/
+@media (max-width: 991.98px) {
+  /* Container */
+  .container {
+    max-width: 720px;
+  }
+  /* Nav Section */
+  :root:has(.menu-checkbox:checked) nav {
+    height: 100vh;
+    background-color: #fff5;
+  }
+  .navbar-row {
+    gap: 1.5rem;
+  }
+  .navbar-div:nth-of-type(1) {
+    flex: 2;
+  }
+  .navbar-div:nth-of-type(2) {
+    display: none;
+  }
+  .navbar-menu-button {
+    text-align: center;
+  }
+  .navbar-menu-div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--color-light);
+    width: 0rem;
+    height: 100vh;
+    transition: width 0.3s ease-in-out;
+    -webkit-transition: width 0.3s ease-in-out;
+    -moz-transition: width 0.3s ease-in-out;
+    -ms-transition: width 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out;
+  }
+  .navbar-menu-list {
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+    gap: 5rem;
+    margin-top: 5rem;
+  }
+  .navbar-menu-list li {
+    width: 100%;
+  }
+  .navbar-div:nth-of-type(4) {
+    display: flex;
+    align-items: center;
+  }
+  .menu-label::after {
+    content: " ";
+    position: absolute;
+  }
+  .menu-checkbox:checked ~ .navbar-menu-div {
+    width: 35rem;
+  }
+  .menu-checkbox:checked + .menu-label::after {
+    content: "X";
+    font-size: 2.25rem;
+    font-weight: 600;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+  }
+  /* Header Section */
+  .header-content {
+    flex-direction: column-reverse;
+    gap: 5rem;
+    padding: 6rem 0rem 4rem 0rem;
+  }
+  .header-text,
+  .header-img {
+    width: 100%;
+    text-align: center;
+  }
+  .header-para {
+    font-size: 1.5rem;
+    padding: 0rem 2rem;
+  }
+  .header-btn {
+    justify-content: center;
+  }
+  .table-btn {
+    --border-radius: 100vh;
+  }
+  /* Chefs Section */
+  .card-img:before {
+    bottom: -45px;
+  }
+  .chefs-cards {
+    flex-wrap: wrap;
+  }
+  .chef-card {
+    width: calc((100% - 3rem) / 2);
+  }
+  /* Gallery Section  */
+  .gallery-pictures {
+    height: 138rem;
+  }
+  .gallery-picture {
+    width: calc((100% - 2rem) / 2);
+  }
+  .gallery-picture:nth-of-type(1) {
+    order: 1;
+  }
+  .gallery-picture:nth-of-type(5) {
+    order: 2;
+  }
+  .gallery-picture:nth-of-type(2) {
+    order: 3;
+  }
+  .gallery-picture:nth-of-type(4) {
+    order: 4;
+  }
+  .gallery-picture:nth-of-type(3) {
+    order: 5;
+  }
+  .gallery-picture:nth-of-type(6) {
+    order: 6;
+  }
+  .gallery-picture:nth-of-type(7) {
+    order: 7;
+  }
+  /* Contact Section */
+  .detail-div {
+    padding: 2.5rem 1rem;
+  }
+  .detail-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+  .detail-icon i {
+    font-size: 1.75rem;
+  }
+  .detail-content > h3 {
+    font-size: 1.75rem;
+  }
+  .detail-content > p,
+  .detail-content > a {
+    font-size: 1.4rem;
+  }
+  .input-row:first-of-type input {
+    width: 100%;
+  }
+  /* Footer Section */
+  footer .container {
+    gap: 4rem 2rem;
+  }
+  .footer-column {
+    min-width: calc((100% - 2rem) / 2);
+  }
+  .footer-social-icons {
+    gap: 2rem;
+  }
+}
+/*#############################################################################*/
+/*############################# $Medium < (768px)$ ############################*/
+/*#############################################################################*/
+@media (max-width: 767.98px) {
+  /* Container */
+  .container {
+    max-width: 540px;
+  }
+  /* Chefs Section */
+  .chefs-cards {
+    justify-content: center;
+  }
+  .chef-card {
+    width: 95%;
+  }
+  .card-img:before {
+    bottom: -20px;
+    height: 11rem;
+  }
+  .card-social-box {
+    top: 2.5rem;
+    padding: 0.5rem;
+  }
+  .card-social-box a {
+    font-size: 2.5rem;
+  }
+  /* Gallery Section  */
+  .gallery-pictures {
+    height: auto;
+  }
+  .gallery-picture {
+    width: 100%;
+  }
+  /* Contact Section */
+  .detail-div {
+    width: 100%;
+  }
+  .detail-content > h3 {
+    font-size: 2rem;
+  }
+  .detail-content > p,
+  .detail-content > a {
+    font-size: 1.5rem;
+  }
+  form button[type="submit"] {
+    --padding: 1.5rem 2rem;
+  }
+  /* Footer Section */
+  footer .container {
+    gap: 4rem 2rem;
+  }
+  .footer-column {
+    min-width: 100%;
+  }
+  .footer-column:nth-of-type(3) {
+    justify-content: flex-start;
+  }
+  .footer-about {
+    padding: 0rem;
+  }
+  .footer-about-para {
+    padding: 1rem 0rem;
+  }
+  .footer-social {
+    align-items: flex-start;
+  }
+  .footer-social > h3 {
+    text-align: left;
+  }
+  .footer-social-icons {
+    gap: 2rem;
+  }
+}
+/*#############################################################################*/
+/*############################ $Small < (576px)$ ##############################*/
+/*#############################################################################*/
+@media (max-width: 575.98px) {
+  /* Container  */
+  .container {
+    max-width: 100%;
+  }
+  /* Header Section */
+  .header-btn {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .table-btn a {
+    padding: 1.5rem 0rem;
+  }
+  /* Chefs Section */
+  .card-img:before {
+    bottom: -24px;
+    height: 10rem;
+  }
+  .card-content {
+    padding: 2rem;
+  }
+  /* Footer Section */
+  footer {
+    padding-inline: 2rem;
+  }
+  .quick-links ul li {
+    width: 35%;
+  }
+}
